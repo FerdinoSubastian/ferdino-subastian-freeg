@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(image/bg.jpg);
+	background-size: cover;
+}
+
+.box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0,0,0,.6);
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.box h1 {
+	text-align: left;
+	margin: 0 0 30px;
+	padding: 0;
+	color: white;
+}
+
+.box h3 {
+	text-align: left;
+	margin: 0 0 30px;
+	padding: 0;
+	color: white;
+}
+
+.box .inputbox {
+	position: relative;
+}
+
+.box .inputbox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	margin-bottom: 30px;
+	color: white;
+	letter-spacing: 1px;
+	padding-bottom: 2px;
+	outline: none;
+}
+
+
+.box .inputbox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	pointer-events: none;
+	transition: .5s;
+	letter-spacing: 1px;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #3498db;
+	font-size: 13px;
+}
+
+.box input[type="submit"] {
+	color: white;
+	background: transparent;
+	border: none;
+	outline: none;
+	background: #3498db;
+	padding: 10px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#gender {
+	color: white;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+}
+
+#gender select {
+	float: right;
+	width: 193px;
+}
+
+#birth {
+	color: white;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+}
+
+#birth input[type="datetime-local"] {
+	float: right;
+}
+
+.accept {
+	color: white;
+	margin-bottom: 15px;
+	padding-bottom: 0;
+	font-size: 13px;
+}
+
+#float li {
+	float: right;
+	position: relative;
+	right: 2%;
+	background: transparent;
+	border: 0;
+	margin-left: 5px;
+	list-style: none;
+	padding-bottom: 10px;
+	padding-top: 10px;
+    transition-duration: 0.3s;
+}
+
+#float li a {
+	color: white;
+	font-variant: small-caps;
+	text-decoration: none;
+	padding: 15px 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#float li:hover, float li:focus, float li:active {
+	background: rgba(225,225,225,.2);
+	color: black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.5);
+}
+
+#about1 {
+	color: white;
+}
+
+.home1 h1 {
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
